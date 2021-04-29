@@ -30,6 +30,12 @@ namespace ConsoleApp1
             Console.WriteLine($"Переменная b после передачи по ссылке равна: {b}" + "\n");
             Console.WriteLine("--------- Выходные параметры ----------- \n\n");
 
+            int e = 17;
+            int outValue;
+
+            SumOut(e, 15, out outValue);
+
+            Console.WriteLine(outValue);
         }
 
         static void IncrimentRef(ref int x)
@@ -57,6 +63,10 @@ namespace ConsoleApp1
             Console.WriteLine($"IncrementVal: {x}");
         }
 
+        static void SumOut(int x, int y, out int z)
+        {
+            z = x + y;
+        }
         
     }
 }
