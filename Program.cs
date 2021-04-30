@@ -2,7 +2,7 @@
 
 namespace ConsoleApp1
 {
-    class Program
+    class Args
     {
         static void Main(string[] args)
         {
@@ -14,7 +14,7 @@ namespace ConsoleApp1
             Console.WriteLine("Результат Addition: " + x + "\n");
             Console.ReadKey();
             Console.WriteLine("Сравнение передачи параметров. Вариант 1: передача по значению \n");
-            
+
             int a = 5;
             Console.WriteLine($"Начальное значение переменной a: {a}" + "\n");
 
@@ -75,6 +75,6 @@ namespace ConsoleApp1
         {
             z = x + y;
         }
-        
+
     }
 }
