@@ -6,11 +6,14 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int x = 34;
-            int y = 222;
+            Console.Write("Введите значение Х ");
+            int x = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Введите значение Y ");
+            int y = Convert.ToInt32(Console.ReadLine()); 
+            
             Addition(ref x, y);
 
-            Console.WriteLine("Результат Sum: " + Sum(10, 15) + "\n");        // параметры передаются по значению
+            Console.WriteLine("Результат Sum(10, 15): " + Sum(10, 15) + "\n");        // параметры передаются по значению
             Console.WriteLine("Результат Addition: " + x + "\n");
             Console.ReadKey();
             Console.WriteLine("Сравнение передачи параметров. Вариант 1: передача по значению \n");
